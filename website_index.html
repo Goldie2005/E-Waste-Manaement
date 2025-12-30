@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Waste Management | Technical Group Project</title>
+  <style>
+    :root {
+      --primary: #15803d;
+      --dark: #064e3b;
+      --light: #f0fdf4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--dark));
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.6rem; margin-bottom: 10px; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .container { max-width: 1100px; margin: auto; padding: 60px 20px; }
+    .section { margin-bottom: 70px; }
+    .section h2 { text-align: center; color: var(--dark); margin-bottom: 20px; }
+    .center { text-align: center; max-width: 850px; margin: auto; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-6px); }
+
+    .avatar {
+      width: 90px; height: 90px; border-radius: 50%;
+      background: var(--light); color: var(--primary);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; font-weight: bold; margin: 0 auto 12px;
+    }
+
+    .counter {
+      font-size: 2.2rem;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    ul.skills {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      max-width: 800px;
+      margin: auto;
+    }
+    ul.skills li {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .btn {
+      padding: 12px 22px;
+      background: var(--primary);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #022c22;
+      color: #d1fae5;
+      text-align: center;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>E-Waste Management System</h1>
+  <p>Modern • Technical • User Friendly 🌱</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#members">Members</a></li>
+    <li><a href="#objectives">Objectives</a></li>
+    <li><a href="#stats">Stats</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#download">Download</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+<section id="about" class="section">
+  <h2>Project Overview</h2>
+  <p class="center">
+    The <strong>E-Waste Management System</strong> is a technical web-based
+    project designed to spread awareness and manage electronic waste
+    efficiently using modern web technologies.
+  </p>
+</section>
+
+<section id="members" class="section">
+  <h2>Group Members</h2>
+  <div class="cards">
+    <div class="card"><div class="avatar">YG</div><h3>Yash Gaikwad</h3><p>Team Leader</p></div>
+    <div class="card"><div class="avatar">RK</div><h3>Raviraj Kadam</h3><p>Developer</p></div>
+    <div class="card"><div class="avatar">AK</div><h3>Atharv Karguthkar</h3><p>Designer</p></div>
+    <div class="card"><div class="avatar">PS</div><h3>Parth Shinde</h3><p>Research & Documentation</p></div>
+  </div>
+</section>
+
+<section id="objectives" class="section">
+  <h2>Project Objectives</h2>
+  <ul class="skills">
+    <li>To create awareness about the harmful effects of improper e-waste disposal</li>
+    <li>To educate users on safe and eco-friendly e-waste recycling methods</li>
+    <li>To design a user-friendly web platform using modern web technologies</li>
+    <li>To promote responsible use and disposal of electronic devices</li>
+    <li>To provide information about collection, segregation, and recycling of e-waste</li>
+    <li>To develop a scalable system that can be extended with backend and database support</li>
+  </ul>
+</section>
+
+<section id="stats" class="section">
+  <h2>Project Statistics</h2>
+  <div class="cards">
+    <div class="card"><div class="counter" data-target="4">0</div><p>Team Members</p></div>
+    <div class="card"><div class="counter" data-target="5">0</div><p>Core Objectives</p></div>
+    <div class="card"><div class="counter" data-target="3">0</div><p>Future Modules</p></div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <h2>Technical Skills Used</h2>
+  <ul class="skills">
+    <li>HTML5</li><li>CSS Grid & Flexbox</li><li>Responsive Design</li>
+    <li>JavaScript Basics</li><li>UI/UX Design</li><li>Project Documentation</li>
+  </ul>
+</section>
+
+<section id="download" class="section">
+  <h2>Project Documents</h2>
+  <p class="center">Download project report and presentation</p>
+  <div class="buttons">
+    <a href="#" class="btn">Download Report (PDF)</a>
+    <a href="#" class="btn">Download PPT</a>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <p>© 2025 E-Waste Management | Technical Student Project</p>
+</footer>
+
+<script>
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter => {
+    const update = () => {
+      const target = +counter.getAttribute('data-target');
+      const current = +counter.innerText;
+      const increment = Math.ceil(target / 40);
+      if (current < target) {
+        counter.innerText = current + increment;
+        setTimeout(update, 60);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    update();
+  });
+</script>
+
+</body>
+</html>
